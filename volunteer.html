@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="x-ua-compatible" content="ie=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<title>Volunteer or Contact Art Connection</title>
+	<!--[if lt IE 9]>
+ 	 <script src="js/html5.js"></script>
+	<![endif]-->
+	<link rel="stylesheet" href="css/style.css" />
+	<!--[if (gt IE 8) | (IEMobile)]><!-->
+	  <link rel="stylesheet" href="css/unsemantic-grid-responsive.css" />
+	<!--<![endif]-->
+	<!--[if (lt IE 9) & (!IEMobile)]>
+	  <link rel="stylesheet" href="css/ie.css" />
+	<![endif]-->
+</head>
+
+<body>
+	<header>
+		<div class="grid-container">
+			
+			<!--sets width of LOGO-->
+			<div class="grid-25">
+				<a href="index.html"><img alt="Art Connection Logo" title="Art Connection" src="img/artConnectionLogo.png"/></a>			</div>
+			
+			<!--sets the width of NAV-->
+			<div class="grid-50">
+				<nav>
+					<ul>
+						<li><a href="about.html">About Us</a></li>
+						<li><a href="gallery.html">Gallery</a></li>
+						<li><a href="volunteer.html">Contact/Volunteer</a></li>	
+						<li id="expandMission">Mission</li>
+					</ul>
+				</nav>
+			<!--end nav grid-->
+			</div>
+			
+		</div>
+	</header>
+	
+	<div class="grid-container">
+	
+		<!--Mission statement autohides-->
+		<div class="grid-80">
+			<section>
+				<article>
+					<p id="mission">Our Mission is to provide a path for underserved youth to achieve higher education, citizen leadership and self sufficiency through paid employment in the creative economy.</p>
+				</article>
+			</section>
+		<!--End mission statement-->
+		</div>
+		
+		<div class="grid-100">
+			<p>
+				To contact Art Connection for questions or to volunteer, fill out the form below and click submit.
+			</p>
+		</div>
+		<div class="grid-75">
+			<form action='http://heyyeyaaeyaaaeyaeyaa.com/' method='post' class='contactForm'> <!--Heyyey-->
+				<div>
+					<label for='name' class='name'>Name<span>(required)</span></label>
+					<input type='text' name='name' id='name' value='' class='name'/>
+				</div>
+				<div>
+					<label for='email' class='email'>Email<span>(required)</span></label>
+					<input type='text' name='email' id='email' value='' class='email'/>
+				</div>
+				<div>
+					<label for='website' class='url'>Website</label>
+					<input type='text' name='website' id='website' value='' class='url'/>
+				</div>
+				<div>
+					<label for='comment' class='textarea'>Comment<span>(required)</span></label>
+					<textarea name='comment' id='comment' rows='20'></textarea>
+				</div>
+ 				<p class='contact-submit'>
+					<input type='submit' value='Submit' class='pushbutton-wide'/>
+					<input type='hidden' name='contact-form-id' value='37' />
+				</p>
+			</form>
+		</div>
+	</div>
+	
+	<footer>
+		<div class="grid-container">
+			<div class="grid-20">
+			<!--begin SOCIAL LINKS-->
+				<ul class="social">
+					<li><a href=""><img alt="twitter logo" title="Click to share on Twitter." src="img/social/twitter.png"/></a></li>
+					<li><a href=""><img alt="google plus logo" title="Click to share on G+." src="img/social/google.png"/></a></li>
+					<li><a href=""><img alt="facebook logo" title="Click to share on Facebook." src="img/social/facebook.png"/></a></li>
+          	 	</ul>
+          	 <!-- end SOCIAL LINKS-->
+		</div>
+	</footer>
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function() {
+			jQuery("#mission").hide();
+  			//toggle the componenet with class msg_body
+  			jQuery("#expandMission").click(function()
+  			{
+    			jQuery('body').find("#mission").slideToggle(500);
+  			});
+		});
+	</script>
+
+</body>
+</html>

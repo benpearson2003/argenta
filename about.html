@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="x-ua-compatible" content="ie=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<title>About Art Connection</title>
+	<!--[if lt IE 9]>
+ 	 <script src="js/html5.js"></script>
+	<![endif]-->
+	<link rel="stylesheet" href="css/style.css" />
+	<!--[if (gt IE 8) | (IEMobile)]><!-->
+	  <link rel="stylesheet" href="css/unsemantic-grid-responsive.css" />
+	<!--<![endif]-->
+	<!--[if (lt IE 9) & (!IEMobile)]>
+	  <link rel="stylesheet" href="css/ie.css" />
+	<![endif]-->
+</head>
+
+<body>
+	<header>
+		<div class="grid-container">
+			
+			<!--sets width of LOGO-->
+			<div class="grid-25">
+				<a href="index.html"><img alt="Art Connection Logo" title="Art Connection" src="img/artConnectionLogo.png"/></a>			</div>
+			
+			<!--sets the width of NAV-->
+			<div class="grid-50">
+				<nav>
+					<ul>
+						<li><a href="about.html">About Us</a></li>
+						<li><a href="gallery.html">Gallery</a></li>
+						<li><a href="volunteer.html">Contact/Volunteer</a></li>	
+						<li id="expandMission">Mission</li>
+					</ul>
+				</nav>
+			<!--end nav grid-->
+			</div>
+			
+		</div>
+	</header>
+	
+	<div class="grid-container">
+	
+		<!--Mission statement autohides-->
+		<div class="grid-80">
+			<section>
+				<article>
+					<p id="mission">Our Mission is to provide a path for underserved youth to achieve higher education, citizen leadership and self sufficiency through paid employment in the creative economy.</p>
+				</article>
+			</section>
+		<!--End mission statement-->
+		</div>
+		
+		<div class="grid-25">
+		<img class="aboutImage" src="img/leather_brag_book_machine.png"/>
+			<section>
+				<article>
+					<h3>Our Story</h3>
+					<p>Driven by a desire to offer local teenagers a creative and meaningful employment opportunity, Art Connection was designed specifically for under-resourced youth.  The inspiration behind our model stems from an incredibly successful program, Artists for Humanity in Boston, MA.  In 1995, Susan Rodgerson created a visual arts-focused work program that would change the lives of hundreds of teens, and continues to transform today.  It is our hope that Art Connection will have the same positive impact on the youth of North Little Rock.</p>
+				<article>
+			</section>
+		</div>
+	
+		<div class="grid-25">
+		<img class="aboutImage" src="img/leadership-development1.png"/>
+			<section>
+				<article>
+					<h3>Creating Leaders</h3>
+					<p>Art Connection aims to instill confidence in every teen in our program. Through partnerships with other arts organizations, local artists, business owners, city government and members of the community, we will strive to equip these young artists with leadership skills. They will experience the challenges and rewards of being a positive role model in our society. We consider it a privilege to be able to influence and help shape the lives of our future leaders.</p>
+				<article>
+			</section>
+		</div>
+	
+		<div class="grid-25">
+		<img class="aboutImage" src="img/INNOVATORS-2-222x160.png"/>
+			<section>
+				<article>
+					<h3>Developing Innovators</h3>
+					<p>Creativity is present in all of us. Some children are raised in an environment where their creativity is nurtured and freely explored. Howerver, other children are not so fortunate. Art Connection desires to awaken these qualities in each of our young artists through various artistic endeavors. This program will enable them  to discover their vision, express their voice and demonstrate their talent.</p>
+				<article>
+			</section>
+		</div>
+	
+		<div class="grid-25">
+		<img class="aboutImage" src="img/moon-shot3.jpg"/>
+			<section>
+				<article>
+					<h3>Moon Shot</h3>
+					<p>Art Connection is one of the partners in  North Little Rock’s Moon Shot Project. Moon Shot’s goal is to increase the number of college graduates in North Little Rock to take advantage of the “Talent Dividend.” This dividend shows that for every 1% increase in college attainment results in a $763.00 increase in per capita income.  For North Little Rock, that would mean an additional $47,565,420.00 per year. Visit the website for North Little Rock’s Moon Shot <a href="http://nlrmoonshot.org">here</a>.</p>
+				<article>
+			</section>
+		</div>
+		
+	</div>
+	
+	<footer>
+		<div class="grid-container">
+			<div class="grid-20">
+			<!--begin SOCIAL LINKS-->
+				<ul class="social">
+					<li><a href=""><img alt="twitter logo" title="Click to share on Twitter." src="img/social/twitter.png"/></a></li>
+					<li><a href=""><img alt="google plus logo" title="Click to share on G+." src="img/social/google.png"/></a></li>
+					<li><a href=""><img alt="facebook logo" title="Click to share on Facebook." src="img/social/facebook.png"/></a></li>
+          	 	</ul>
+          	 <!-- end SOCIAL LINKS-->
+		</div>
+	</footer>
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function() {
+			jQuery("#mission").hide();
+  			//toggle the componenet with class msg_body
+  			jQuery("#expandMission").click(function()
+  			{
+    			jQuery('body').find("#mission").slideToggle(500);
+  			});
+		});
+	</script>
+
+</body>
+</html>

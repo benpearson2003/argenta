@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="x-ua-compatible" content="ie=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<title>Art Connection</title>
+	<!--[if lt IE 9]>
+ 	 <script src="js/html5.js"></script>
+	<![endif]-->
+	<link rel="stylesheet" href="css/style.css" />
+	<!--[if (gt IE 8) | (IEMobile)]><!-->
+	  <link rel="stylesheet" href="css/unsemantic-grid-responsive.css" />
+	<!--<![endif]-->
+	<!--[if (lt IE 9) & (!IEMobile)]>
+	  <link rel="stylesheet" href="css/ie.css" />
+	<![endif]-->
+</head>
+
+<body>
+	<header>
+		<div class="grid-container">
+			
+			<!--sets width of LOGO-->
+			<div class="grid-25">
+				<a href="index.html"><img alt="Art Connection Logo" title="Art Connection" src="img/artConnectionLogo.png"/></a>			</div>
+			
+			<!--sets the width of NAV-->
+			<div class="grid-50">
+				<nav>
+					<ul>
+						<li><a href="about.html">About Us</a></li>
+						<li><a href="gallery.html">Gallery</a></li>
+						<li><a href="volunteer.html">Contact/Volunteer</a></li>	
+						<li id="expandMission">Mission</li>
+					</ul>
+				</nav>
+			<!--end nav grid-->
+			</div>
+			
+		</div>
+	</header>
+	
+	<div class="grid-container">
+	
+		<!--Mission statement autohides-->
+		<div class="grid-80">
+			<section>
+				<article>
+					<p id="mission">Our Mission is to provide a path for underserved youth to achieve higher education, citizen leadership and self sufficiency through paid employment in the creative economy.</p>
+				</article>
+			</section>
+		<!--End mission statement-->
+		</div>
+		
+		<div class="grid-100">
+			<section id="news">
+				<article>
+					<h3 class="articleTitle">THEA Arts Festival</h3>
+					<p class="dateAndPlace">Main St on Saturday April 27, 2013</p>
+					<p class="timeOfEvent">10am - 12:30pm & 1:00pm to 4:00pm</p>
+					<p>Our young artists will be painting and sketching in the tent and in our studio. Our Gallery will be open during this event. Visit this fabulous event in Argenta & check out the Amazing Art of our youth staff and the other artists on Main. It will be FUN!</p>
+				</article>
+				<article>
+					<h3 class="articleTitle">Argenta ArtWalk – Friday April 19</h3>
+					<p class="dateAndPlace">Friday April 19, 2013</p>
+					<p class="timeOfEvent">5:00pm - 8:00pm</p>
+					<p>Experience the creativity of our young artists as you witness their awesome paintings including new Mixed Media pieces.  Meet our amazing team of youth staff from 5:30-7:30pm.  Hope to see you there!</p>
+				</article>
+				<article>
+					<h3 class="articleTitle">JFK Exhibition</h3>
+					<p class="dateAndPlace">12pm - 7pm Tuesday March 26 to Friday and 10am - 4pm Saturday March 30</p>
+					<p class="timeOfEvent">10am - 12:30pm & 1:00pm to 4:00pm</p>
+					<p>“JFK: 50 Years Later” exhibition week is here!  We are so thankful to our generous sponsors for making the events of this week possible.  All venues are open 12pm to 7pm Tuesday through Friday, and 10am to 4pm on Saturday. The exhibition, presented by Rogers Photo Archives and Argenta Images, includes photos that have never or rarely been seen. The photos focus on various aspects of the President’s life, including family, early years in politics, critical issues and images of the times, and his Presidency. The exclusive photos will be on display in the Argenta Arts District galleries and exhibition space in downtown North Little Rock, home of Rogers Photo Archive and Argenta Images. Eight North Little Rock galleries and restaurants will serve as hosts of the approximately 120 images.</p>
+				</article>
+			</section>
+		</div>
+	</div>
+	
+	<footer>
+		<div class="grid-container">
+			<div class="grid-20">
+			<!--begin SOCIAL LINKS-->
+				<ul class="social">
+					<li><a href=""><img alt="twitter logo" title="Click to share on Twitter." src="img/social/twitter.png"/></a></li>
+					<li><a href=""><img alt="google plus logo" title="Click to share on G+." src="img/social/google.png"/></a></li>
+					<li><a href=""><img alt="facebook logo" title="Click to share on Facebook." src="img/social/facebook.png"/></a></li>
+          	 	</ul>
+          	 <!-- end SOCIAL LINKS-->
+		</div>
+	</footer>
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function() {
+			jQuery("#mission").hide();
+  			//toggle the componenet with class msg_body
+  			jQuery("#expandMission").click(function()
+  			{
+    			jQuery('body').find("#mission").slideToggle(500);
+  			});
+		});
+	</script>
+
+</body>
+</html>
